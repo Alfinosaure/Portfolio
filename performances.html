@@ -4,60 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Performances</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
     <link rel="stylesheet" href="font.css">
     <link rel="stylesheet" href="var.css">
     <link rel="stylesheet" href="paragraphe.css">
     <link rel="stylesheet" href="stylePerformances.css">
     <link rel="stylesheet" href="loading.css">
-    
-
 </head>
 <body>
 
+    <!-- Écran de chargement -->
     <div id="loading-screen">
         <img src="images/spinner.png" alt="Chargement..." class="rotating-image">
-        <p>...</p>
+        <p>Chargement...</p>
     </div>
 
-<div id = "feedcentral" >
-    <p id="Titre">Performances</p>
-    <a href="index.html">
-        <img src="images/bordereau.png" alt="home">
-    </a>
+    <!-- Contenu principal -->
+    <div id="feedcentral">
+        <p id="Titre">Performances</p>
+        <a href="index.html">
+            <img src="images/bordereau.png" alt="Retour à l'accueil">
+        </a>
+        <p id="Presentation">
+            Parfois je m'ennuie et je danse :3<br>
+            Sometimes I get bored and dance :3
+        </p>
+    </div> 
 
-    <p id="Presentation">
-        Parfois je m'ennuie et je danse :3<br>
-        Sometimes I get bored and dance :3
-    </p>
+    <!-- Liste des performances -->
+    <main id="feed">
+        <!-- Performance 1 -->
+        <div class="feed-item">
+            <img src="images/performances/boum.png" alt="Performance 1" class="enlarge-on-hover">
+            <p id="SousTitres">La Boum</p>
+        </div>
+        
+        <!-- Performance 2 -->
+        <div class="feed-item">
+            <img src="images/performances/furax.png" alt="Performance 2" class="enlarge-on-hover">
+            <p id="SousTitres">Furax</p>
+        </div>
 
-</div> 
+        <!-- Vidéo teaser -->
+        <div class="feed-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tttdQtdDNH4" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <p id="SousTitres">Furax teaser</p>
+        </div>
 
-<main id="feed">
-    <!-- Image 1 -->
-    <div class="feed-item">
-        <img src="images/performances/boum.png" alt="Performance 1">
-        <p id="SousTitres">La Boum</p>
-    </div>
-    
-    <!-- Image 2 -->
-    <div class="feed-item">
-        <img src="images/performances/furax.png" alt="Performance 2">
-        <p id="SousTitres">Furax</p>
-    </div>
+        <!-- Performance 3 -->
+        <div class="feed-item">
+            <img src="images/performances/citedudesign_040950_BD.jpg" alt="Performance 3" class="enlarge-on-hover">
+            <p id="SousTitres">Antropochienne, diploma project</p>
+        </div>
+    </main>
 
-    <!-- Vidéo YouTube 1 -->
-    <div class="feed-item">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/tttdQtdDNH4" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-        <p id="SousTitres">Furax teaser</p>
-    </div>
-
-</main>
-    
-    
 </body>
 </html>

@@ -58,3 +58,21 @@ a img:hover {
     border: none;
 
 }
+
+/* Style pour les images normales */
+.enlarge-on-hover {
+    display: block;
+    width: 100%; /* Taille normale des images */
+    max-width: 400px; /* Limite de la largeur */
+    height: auto; /* Maintient les proportions */
+    margin: 0 auto; /* Centre les images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition fluide */
+}
+
+/* Agrandissement au survol */
+.enlarge-on-hover:hover {
+    transform: scale(1.6); /* Agrandit l'image à 120% */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Ajoute une ombre subtile */
+    z-index: 1; /* Amène l'image au premier plan */
+    cursor: pointer; /* Indique que l'image est interactive */
+}
