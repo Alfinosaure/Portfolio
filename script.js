@@ -36,23 +36,3 @@ function closePopup() {
     popup.style.display = "none";
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Sélectionner tous les éléments de la liste d'articles
-    const articleItems = document.querySelectorAll('.article-item');
-    const pdfContainer = document.getElementById('pdf-container');
-    const pdfViewer = document.getElementById('pdf-viewer');
-
-    // Ajouter un événement 'click' à chaque élément de la liste
-    articleItems.forEach(item => {
-        item.addEventListener('click', () => {
-            const pdfPath = item.getAttribute('data-pdf');
-            pdfViewer.src = pdfPath; // Mettre à jour le chemin du PDF à charger dans l'iframe
-            
-            // Afficher le conteneur PDF si ce n'est pas déjà fait
-            if (pdfContainer.style.display === 'none') {
-                pdfContainer.style.display = 'block';
-            }
-        });
-    });
-});
-
