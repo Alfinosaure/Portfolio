@@ -37,16 +37,14 @@ body {
     transform: scale(1.05); /* Léger agrandissement au survol */
 }
 
-/* Conteneur PDF */
-#pdf-container {
-    margin: 20px auto;
-    width: 80%; /* Ajuste la largeur pour l'écran */
-    text-align: center;
+.pdf-link {
+    font-family: var(--font-italic); /* Utilise votre police italique */
+    color: var(--main-text-color); /* Couleur principale du texte */
+    text-decoration: none; /* Supprime le soulignement */
+    transition: color 0.3s ease;
 }
 
-#pdf-viewer {
-    width: 100%;
-    height: auto;
-    border: none;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+.pdf-link:hover {
+    color: powderblue; /* Change la couleur au survol */
+    text-decoration: underline; /* Ajoute un soulignement */
 }

@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="var.css">
     <link rel="stylesheet" href="paragraphe.css">
     <link rel="stylesheet" href="styleTexts.css">
-    <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -25,15 +24,22 @@
 
     <div id="feedArticles">
         <ul class="article-list">
-            <li class="article-item" data-pdf="textes/doomscrolling.pdf">Doomscrolling, kétamine chic & post réalisme capitaliste : <br>terrains de l’hyperpop</li>
-            <li class="article-item" data-pdf="textes/article2.pdf">Une autre réflexion</li>
-            <li class="article-item" data-pdf="textes/memoire.pdf">Mémoire sur l'hyperpop</li>
+            <li class="article-item">
+                <a href="textes/doomscrolling.pdf" target="_blank" class="pdf-link">
+                    Doomscrolling, kétamine chic & post réalisme capitaliste : <br>terrains de l’hyperpop
+                </a>
+            </li>
+            <li class="article-item">
+                <a href="textes/article2.pdf" target="_blank" class="pdf-link">
+                    Une autre réflexion
+                </a>
+            </li>
+            <li class="article-item">
+                <a href="textes/memoire.pdf" target="_blank" class="pdf-link">
+                    Mémoire sur l'hyperpop
+                </a>
+            </li>
         </ul>
-
-        <!-- Conteneur PDF -->
-        <div id="pdf-container">
-            <iframe id="pdf-viewer" src="" width="100%" height="500px" style="border: none;"></iframe>
-        </div>
     </div>
 </body>
 </html>
