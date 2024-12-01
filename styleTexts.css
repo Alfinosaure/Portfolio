@@ -1,38 +1,52 @@
-/* Styles globaux */
+/* Fond global */
 body {
     background-color: var(--main-bg-color);
-   
-   }
-   
-   
-   
-   #feedArticles {
-    position: relative;
+    color: var(--main-text-color);
+}
+
+/* Conteneur central */
+#feedcentral {
     text-align: center;
-    width: 40%;
+    padding: 20px;
+    background-color: var(--feed-bg-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Liste des articles */
+.article-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; /* Centre la liste */
+    text-align: center; /* Centre le texte */
+    width: 60%; /* Ajuste la largeur de la liste */
+}
+
+/* Style des titres d'articles */
+.article-item {
+    font-family: var(--font-italic); /* Police en italique */
+    font-size: clamp(14px, 2vw, 18px); /* Responsive */
+    color: var(--main-text-color);
+    margin: 15px 0; /* Espacement entre les titres */
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition douce */
+}
+
+.article-item:hover {
+    color: powderblue; /* Changement de couleur au survol */
+    transform: scale(1.05); /* Léger agrandissement au survol */
+}
+
+/* Conteneur PDF */
+#pdf-container {
+    margin: 20px auto;
+    width: 80%; /* Ajuste la largeur pour l'écran */
+    text-align: center;
+}
+
+#pdf-viewer {
+    width: 100%;
     height: auto;
-    margin-top: 10%;
-    margin: 40px auto;
-    padding: 20px 30px;
-
-    background-color: var(--main-text-color);
-   }
-
-   .article{
-
-    border: var(--main-bg-color);
-    border-top: 1px;
-   }
-
-   .titreArticle{
-
-    font-family: var(--font-italic);
-    font-size: 18pt;
-   }
-   
-   .texte{
-    text-align: left;
-    font-size: 14pt;
-    font-family: var(--font-text);
-   }
-
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}

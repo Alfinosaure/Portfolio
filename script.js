@@ -35,3 +35,16 @@ function setup() {
 function closePopup() {
     popup.style.display = "none";
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const pdfViewer = document.getElementById('pdf-viewer');
+    const articleItems = document.querySelectorAll('.article-item');
+
+    // Ajoute un événement de clic à chaque article
+    articleItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const pdfUrl = item.getAttribute('data-pdf'); // Récupère le chemin du PDF
+            pdfViewer.src = pdfUrl; // Met à jour le viewer
+        });
+    });
+});
