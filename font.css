@@ -1,21 +1,21 @@
 @font-face {
     
     font-family: "Crozet";
-    src: url("/Users/alf/Desktop/site internet/fonts/Crozet-Regular.otf");
+    src: url("fonts/Crozet-Regular.otf");
 
 }
 
 @font-face {
     
     font-family: "Supria";
-    src: url("/Users/alf/Desktop/site internet/fonts/SupriaSans-Regular.otf");
+    src: url("fonts/SupriaSans-Regular.otf");
 
 }
 
 @font-face {
     
     font-family: "Poppins Italic";
-    src: url("/Users/alf/Desktop/site internet/fonts/BBBPoppinsTN-TextRegularItalic.otf");
+    src: url("fonts/BBBPoppinsTN-TextRegularItalic.otf");
 
 }
 
