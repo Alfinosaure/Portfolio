@@ -1,0 +1,65 @@
+/* Styles globaux */
+body {
+    background-color: var(--main-bg-color);
+   
+   }
+   
+   #feedcentral {
+       text-align: center;
+       padding: 20px;
+       background-color: rgba(0, 0, 0, 0.8);
+       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+   }
+   
+   
+   
+   /* Feed principal */
+   #feed {
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       padding: 20px;
+       align-items: center;
+   }
+
+   /* Style pour le feed des synthés */
+#synths-feed {
+    font-family: var(--font-main); /* Police héritée */
+    text-align: center; /* Centre les contenus */
+    width: 60%; /* Légèrement plus large que #feedcentral */
+    margin: 40px auto; /* Centre avec un espacement vertical */
+    padding: 20px 30px; /* Espacement interne */
+
+
+    overflow-y: auto; /* Défilement vertical */
+    overflow-x: hidden; /* Pas de défilement horizontal */
+}
+
+
+
+
+/* Style pour les sections des synthés */
+#synths-feed .section {
+    font-family: var(--font-italic); /* Police pour le texte */
+    margin: 20px auto; /* Espacement entre les sections */
+    text-align: center; /* Centre les contenus */
+}
+
+/* Style pour les descriptions */
+#synths-feed .section p {
+    color: var(--main-text-color); /* Couleur du texte */
+    font-size: clamp(12px, 2vw, 18px); /* Texte responsive */
+    line-height: 1.5; /* Améliore l'espacement des lignes */
+    margin-top: 10px; /* Espacement au-dessus */
+}
+
+/* Style pour les images */
+#synths-feed .section img {
+    width: 100%; /* Adapte l'image à la largeur du conteneur */
+    max-width: 400px; /* Taille maximale pour éviter une image trop grande */
+    height: auto; /* Conserve les proportions */
+    display: block; /* Supprime les espaces indésirables autour de l'image */
+    margin: 0 auto; /* Centre l'image horizontalement */
+
+}
+

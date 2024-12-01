@@ -1,0 +1,41 @@
+@font-face {
+    
+    font-family: "Crozet";
+    src: url("/Users/alf/Desktop/site internet/fonts/Crozet-Regular.otf");
+
+}
+
+@font-face {
+    
+    font-family: "Supria";
+    src: url("/Users/alf/Desktop/site internet/fonts/SupriaSans-Regular.otf");
+
+}
+
+@font-face {
+    
+    font-family: "Poppins Italic";
+    src: url("/Users/alf/Desktop/site internet/fonts/BBBPoppinsTN-TextRegularItalic.otf");
+
+}
+
+@font-face {
+    font-family: "Homoneta Regular";
+    src: url(fonts/Homoneta-Regular.otf);
+}
+
+@font-face {
+    font-family: "Homoneta Italic";
+    src: url(fonts/Homoneta-Italic.otf);
+}
+
+
+
+/* Variables pour les typographies */
+:root {
+    --font-main: "Crozet";
+    --font-secondary: "Supria";
+    --font-italic: "Poppins Italic";
+    --font-text: "Homoneta Regular";
+    --font-text-italic: "Homoneta Italic"
+}

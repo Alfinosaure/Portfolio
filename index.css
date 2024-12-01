@@ -1,0 +1,144 @@
+#pop-up {
+    background-color: var(--main-text-color);
+    font-family: var(--font-italic);
+    width: clamp(250px, 30%, 600px); /* Largeur responsive : min 250px, max 600px */
+    min-height: 200px; /* Hauteur minimale */
+    max-height: 90vh; /* Limite la hauteur à 90% de la hauteur de l'écran */
+    position: fixed; /* Fixe la position par rapport à la fenêtre */
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Corrige le décalage dû à top et left */
+    margin: 0; /* Pas de marge supplémentaire nécessaire pour le centrage */
+    text-align: center;
+    z-index: 9998; /* Toujours au-dessus des autres éléments */
+    padding: clamp(10px, 2vw, 30px); /* Padding responsive, avec un minimum et un maximum */
+    overflow: auto; /* Gère le défilement si le contenu dépasse */
+    border-radius: 10px; /* Coins légèrement arrondis */
+}
+
+#close {
+    font-family: var(--font-italic);
+    background: none;
+    width: clamp(20px, 4vw, 40px); /* Taille ajustable */
+    height: clamp(20px, 4vw, 40px);
+    border: none; /* Supprime la bordure */
+    position: absolute; /* Place le bouton au coin de la pop-up */
+    top: 10px; /* Fixe l'espace par rapport au haut */
+    right: 10px; /* Fixe l'espace par rapport à la droite */
+    cursor: pointer; /* Change le curseur pour indiquer que c'est cliquable */
+    z-index: 9999; /* Place le bouton au-dessus du contenu */
+    padding: 0; /* Supprime tout espace interne */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /* background-image: url("/images/fond.png");*/
+   background-color: var(--main-bg-color);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+.bouton {
+    font-family: var(--font-italic);
+    display: block;
+    color: var(--main-text-color);
+    text-decoration: none; /* Supprime le soulignement (au cas où) */
+    margin-left: clamp(5px, 5vw, 10px); /* Marge responsive à gauche */
+}
+
+/* Style pour le bouton actif avec clignotement */
+.bouton.actif {
+    font-family: var(--font-italic);
+    display: block;
+    color:var(--main-text-color);
+    animation: clignoter 1s infinite; /* Applique l'animation */
+}
+
+/* Animation pour le clignotement */
+@keyframes clignoter {
+    0%, 100% {
+        opacity: 1; /* Complètement visible */
+    }
+    50% {
+        opacity: 0.5; /* Semi-transparent */
+    }
+}
+@keyframes borderClignoter {
+    0%, 100% {
+        border-color: var(--main-text-color); /* Couleur initiale */
+    }
+    50% {
+        border-color: transparent; /* Bordure invisible */
+    }
+}
+
+
+
+.img_feed{
+    
+    display: block;
+    margin-left: 10pt;
+    margin-right: 10pt;
+    
+}
+
+/* Style de base pour les images */
+img {
+    display: block;
+    max-width: 100%; /* Adapte l'image à son conteneur */
+    margin: 20px auto; /* Centre les images et ajoute un espacement */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transition fluide */
+}
+
+/* Effet au survol */
+img:hover {
+    transform: scale(1.1); /* Agrandit l'image à 110% */
+    opacity: 0.9; /* Légère transparence */
+    cursor: pointer; /* Indique que l'image est interactive */
+}
+
+#banniere-defilante {
+    position: fixed; /* Toujours visible en bas */
+    bottom: 0; /* Aligné en bas de la page */
+    width: 100vw; /* Utilise 100% de la largeur de l'écran */
+    background-color: var(--main-text-color); /* Fond */
+    color: var(--main-bg-color); /* Couleur du texte */
+    font-family: var(--font-italic); /* Police du texte */
+    font-size: 18pt; /* Taille du texte */
+    display: flex;
+    overflow: hidden; /* Masque le texte en dehors de la zone visible */
+    border-top: 2px solid beige; /* Ligne séparatrice */
+    height: 24pt; /* Hauteur de la bannière */
+    z-index: 1000; /* S'assure que la bannière reste visible */
+}
+
+
+/* Contenu de la bannière */
+.contenu-banniere {
+    display: flex; /* Les textes sont alignés horizontalement */
+    justify-content: start; /* Alignement initial */
+    align-items: center; /* Centre verticalement le texte */
+    animation: defilement 15s linear infinite; /* Animation pour le défilement */
+}
+
+/* Texte de la bannière */
+.contenu-banniere span {
+    margin-right: 50px; /* Espace entre les phrases */
+    white-space: nowrap; /* Pas de retour à la ligne */
+}
+
+/* Animation pour le défilement */
+@keyframes defilement {
+    from {
+        transform: translateX(100%); /* Commence hors de l'écran à droite */
+    }
+    to {
+        transform: translateX(-100%); /* Termine hors de l'écran à gauche */
+    }
+}

@@ -1,0 +1,60 @@
+
+body{
+
+    background-color: var(--main-bg-color);
+
+}
+
+/* Style de base pour les images */
+img {
+    display: block;
+    max-width: 100%; /* Adapte l'image à son conteneur */
+    margin: 20px auto; /* Centre les images et ajoute un espacement */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transition fluide */
+
+}
+
+/* Effet au survol uniquement pour les images cliquables */
+a img:hover {
+    transform: scale(1.1); /* Agrandit l'image à 110% */
+    opacity: 0.9; /* Légère transparence */
+    cursor: pointer; /* Indique que l'image est interactive */
+}
+
+/* Styles pour le feed */
+#feed {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    gap: 20px; /* Espacement entre les éléments */
+    padding: 20px;
+}
+
+.feed-item {
+    background-color: rgba(0, 0, 0, 0.8);
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    max-width: 400px;
+    text-align: center;
+    padding: 10px;
+}
+
+.feed-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.feed-item p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: beige;
+}
+
+.feed-item iframe {
+    width: 100%;
+    border: none;
+
+}

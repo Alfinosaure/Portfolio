@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alféa Morelli</title>
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="var.css">
+    <link rel="stylesheet" href="paragraphe.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="loading.css">
+
+</head>
+<body>
+
+    
+    <div id="loading-screen">
+        <img src="images/spinner.png" alt="Chargement..." class="rotating-image">
+        <p>...</p>
+    </div>
+    
+    <!-- Pop-up -->
+<div id="pop-up" style="display: none;">
+    <button id="close">X</button>
+    <p>Bonjour :3 <br>
+        Je m'appelle Alféa Morelli, bienvenue sur mon site. <br>
+        Ici j'entrepose mes projets divers. <br>
+        About AI, I did this website by myself but I used chat gpt for optimisation and responcivity. Anyways AI is a tool that we can use if we keep a critical eye about it :"</p>
+</div>
+        </button>
+        
+    </div>
+
+    <audio id="soundmood" src="soundscape/soundscape noise.mp3" ></audio>
+    <div id="soundscape-buttons">
+        <a href="javascript:void(0)" onclick="changeState(0)" class="bouton">soundscape on</a>
+        <a href="javascript:void(0)" onclick="changeState(1)" class="bouton actif">soundscape off</a>
+    </div>
+    <script>
+        function changeState(x) {
+            // Sélectionner les boutons
+            let boutons = document.querySelectorAll(".bouton");
+            
+            // Sélectionner l'élément audio
+            let audio = document.getElementById("soundmood");
+
+            // Mise à jour des classes pour les boutons
+            for (let i = 0; i < boutons.length; i++) {
+                boutons[i].classList.remove("actif");
+            }
+            boutons[x].classList.add("actif");
+
+            // Lecture ou arrêt du son
+            if (x === 0) {
+                audio.play(); // Activer la lecture
+            } else if (x === 1) {
+                audio.pause(); // Mettre en pause
+            }
+        }
+    </script>
+   
+   <div id="feedcentral">
+    <p id="Titre">Alféa Morelli</p>
+    <a href="index.html">
+    <img src="images/bordereau.png" alt="">
+    </a>
+    <p id="Presentation">
+        Bienvenue sur mon site internet :3<br>
+        Welcome on my website :3
+    </p>
+
+    <!-- Image "Performances" cliquable -->
+    <a href="performances.html">
+        <img src="images/performances.png" alt="Performances">
+    </a>
+    <p id="SousTitres">Performances</p>
+
+    <!-- Image "Sound Projects" cliquable -->
+    <a href="sound.html">
+        <img src="images/sound.png" alt="Sound projects">
+    </a>
+    <p id="SousTitres">Sound projects</p>
+
+    <!-- Image "Sculptures" cliquable -->
+    <a href="sculptures.html">
+        <img src="images/sculptures.png" alt="Sculptures">
+    </a>
+    <p id="SousTitres">Sculptures</p>
+
+    <!-- Image "DIY Synths" cliquable -->
+    <a href="synths.html">
+        <img src="images/synths.png" alt="DIY Synths">
+    </a>
+    <p id="SousTitres">DIY Synths</p>
+
+        <!-- Image "Texts" cliquable -->
+        <a href="texts.html">
+            <img src="images/Texts.png" alt="Texts">
+        </a>
+        <p id="SousTitres">Texts</p>
+
+    <p id="credits">Typo: BBBCrozette & BBBPoppins</p>
+</div>
+
+<div id="banniere-defilante">
+    <div class="contenu-banniere">
+        <span>instagram @alfinosaure</span>
+        <span>mail morelli.alfea@gmail.com</span>
+        <span>bandcamp MASH IS A GIRL</span>
+        <span>Merci de votre visite !</span>
+    </div>
+</div>
+
+</body>
+<script src="script.js"></script>
+
+
+</html>

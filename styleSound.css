@@ -1,0 +1,59 @@
+/* Styles globaux */
+body {
+ background-color: var(--main-bg-color);
+
+}
+
+#feedcentral {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--main-bg-color);
+ 
+}
+
+
+
+/* Feed principal */
+#feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+/* Style des projets sonores */
+.sound-item {
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--main-bg-color);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.sound-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.sound-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: var(--main-text-color);
+}
+
+.sound-description {
+    font-family: var(--font-italic);
+    font-size: 1rem;
+    margin-top: 10px;
+    color: var(--main-text-color);
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}

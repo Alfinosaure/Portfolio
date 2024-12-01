@@ -1,0 +1,38 @@
+/* Styles globaux */
+body {
+    background-color: var(--main-bg-color);
+   
+   }
+   
+   
+   
+   #feedArticles {
+    position: relative;
+    text-align: center;
+    width: 40%;
+    height: auto;
+    margin-top: 10%;
+    margin: 40px auto;
+    padding: 20px 30px;
+
+    background-color: var(--main-text-color);
+   }
+
+   .article{
+
+    border: var(--main-bg-color);
+    border-top: 1px;
+   }
+
+   .titreArticle{
+
+    font-family: var(--font-italic);
+    font-size: 18pt;
+   }
+   
+   .texte{
+    text-align: left;
+    font-size: 14pt;
+    font-family: var(--font-text);
+   }
+
