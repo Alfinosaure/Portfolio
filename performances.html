@@ -24,43 +24,62 @@
     <div id="feedcentral">
         <p id="Titre">Performances</p>
         <a href="index.html">
-            <img src="images/bordereau.png" alt="Retour à l'accueil">
+            <img src="images/bordereau.png" alt="home">
         </a>
         <p id="Presentation">
-            Parfois je m'ennuie et je danse :3<br>
-            Sometimes I get bored and dance :3
+            Parfois je m'ennuie et je danse<br>
+            Sometimes i get bored and I dance
         </p>
     </div> 
 
-    <!-- Liste des performances -->
     <main id="feed">
-        <!-- Performance 1 -->
+        <!-- Performance statique -->
         <div class="feed-item">
-            <img src="images/performances/boum.png" alt="Performance 1" class="enlarge-on-hover">
+            <img src="images/performances/boum.png" alt="Performance 1">
             <p id="SousTitres">La Boum</p>
         </div>
-        
-        <!-- Performance 2 -->
+
+        <!-- Performance avec carrousel -->
         <div class="feed-item">
-            <img src="images/performances/furax.png" alt="Performance 2" class="enlarge-on-hover">
+            <div class="carousel">
+                <button class="prev">&lt;</button>
+                <div class="carousel-container">
+                    <img src="images/performances/diplome1.jpg" alt="Antropochienne 1">
+                    <img src="images/performances/diplome2.jpg" alt="Antropochienne 2">
+                    <img src="images/performances/diplome3.jpg" alt="Antropochienne 3">
+                    <img src="images/performances/diplome4.jpg" alt="Antropochienne 4">
+                    <img src="images/performances/diplome5.jpg" alt="Antropochienne 5">
+                    <img src="images/performances/diplome6.jpg" alt="Antropochienne 6">
+                </div>
+                <button class="next">&gt;</button>
+            </div>
+            <p id="SousTitres">Antropochienne, diploma project</p>
+        </div>
+
+        <!-- Performance avec carrousel -->
+        <div class="feed-item">
+            <div class="carousel">
+                <button class="prev">&lt;</button>
+                <div class="carousel-container">
+                    <img src="images/performances/furax.png" alt="Furax 1">
+                    <img src="images/performances/furax2.jpg" alt="Furax 2">
+                    <img src="images/performances/furax3.jpg" alt="Furax 3">
+                </div>
+                <button class="next">&gt;</button>
+            </div>
             <p id="SousTitres">Furax</p>
         </div>
 
-        <!-- Vidéo teaser -->
+        <!-- Vidéo YouTube conservée -->
         <div class="feed-item">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/tttdQtdDNH4" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tttdQtdDNH4"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
                 clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
             <p id="SousTitres">Furax teaser</p>
-        </div>
-
-        <!-- Performance 3 -->
-        <div class="feed-item">
-            <img src="images/performances/citedudesign_040950_BD.jpg" alt="Performance 3" class="enlarge-on-hover">
-            <p id="SousTitres">Antropochienne, diploma project</p>
         </div>
     </main>
 
 </body>
 </html>
+

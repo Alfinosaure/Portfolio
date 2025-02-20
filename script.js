@@ -36,3 +36,28 @@ function closePopup() {
     popup.style.display = "none";
 }
 
+
+// caroussel 
+document.addEventListener("DOMContentLoaded", function() {
+    const carousels = document.querySelectorAll(".carousel");
+
+    carousels.forEach(carousel => {
+        let index = 0;
+        const images = carousel.querySelectorAll(".carousel-container img");
+        const totalImages = images.length;
+        const prevBtn = carousel.querySelector(".prev");
+        const nextBtn = carousel.querySelector(".next");
+
+        function showImage(i) {
+            index = (i + totalImages) % totalImages;
+            const translateX = -index * 100;
+            carousel.querySelector(".carousel-container").style.transform = `translateX(${translateX}%)`;
+        }
+
+        prevBtn.addEventListener("click", () => showImage(index - 1));
+        nextBtn.addEventListener("click", () => showImage(index + 1));
+    });
+});
+
+
+
